@@ -1,9 +1,12 @@
 <h2>Products</h2>
 
-<ul *ngFor="let item of products">
+<tr *ngFor="let item of products; index as i;">
   
-  <li>{{item.name}}</li>
-</ul>
+  <td>{{i+1}}</td>
+  <td>{{item.name}}</td>
+  <td>{{item.description}}</td>
+  <td>{{item.price}}</td>
+</tr>
 <!-- 
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
